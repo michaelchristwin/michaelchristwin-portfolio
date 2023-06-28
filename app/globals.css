@@ -32,19 +32,28 @@ body {
     width: 100%;
   }
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .hero span {
   overflow: hidden;
   white-space: nowrap;
-}
-.typing {
-  animation: typing 3s steps(20, end) forwards;
-}
-div.hero > div > span:nth-child(1) {
-  overflow: hidden;
-  white-space: nowrap;
   width: 0;
-  animation: typing;
-  animation-duration: 2.5s;
+}
+
+.typing {
+  animation: typing 1.5s steps(30, end) forwards;
+}
+
+.hero span:nth-child(1) {
+  animation-duration: 3s;
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
   font-family: Helvetica;
@@ -53,24 +62,14 @@ div.hero > div > span:nth-child(1) {
   line-height: 40px;
 }
 
-div.hero > div > span:nth-child(2) {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 2.5s;
-  animation-delay: 1.7s;
+.hero span:nth-child(2) {
+  animation-duration: 4s;
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
 }
 
-div.hero > div > span:nth-child(3) {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing;
-  animation-duration: 2.5s;
-  animation-delay: 3.2s;
+.hero span:nth-child(3) {
+  animation-duration: 4s;
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
 }
