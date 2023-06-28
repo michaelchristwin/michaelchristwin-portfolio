@@ -17,7 +17,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero lg:block !flex">
+    <div className="hero lg:block flex">
       <div>
         <span
           ref={firstLineRef}
