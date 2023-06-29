@@ -9,7 +9,13 @@ function Tool({ img }: ToolProps) {
     <li className="hex">
       <div className="hexIn">
         <div className="hexLink">
-          <Image src={img} alt="Tool" width={100} height={70} />
+          <Image
+            src={img}
+            alt="Tool"
+            width={70}
+            height={70}
+            className="rounded-[30%]"
+          />
         </div>
       </div>
     </li>

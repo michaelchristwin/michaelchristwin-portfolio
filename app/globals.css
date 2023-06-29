@@ -320,7 +320,6 @@ li {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: white;
-  border-radius: 10%;
   flex-direction: column;
   -webkit-transform: rotate3d(0, 0, 0, 0deg);
   -ms-transform: rotate3d(0, 0, 0, 0deg);

@@ -7,7 +7,7 @@ function Projects() {
       <h1 className="text-center pro-t">Projects</h1>
       <div className="lg:grid-rows-2 grid lg:grid-cols-2 grid-cols-1 grid-rows-1 gap-y-8">
         <Link
-          href="https://learn-hall-app.vercel.app/"
+          href="https://learnhall-web.vercel.app/"
           target="__blank"
           className="block pn hover:opacity-75"
         >
@@ -15,7 +15,7 @@ function Projects() {
             Learnhall Official Website
           </div>
           <Image
-            src={`/learnhall.png`}
+            src={`/lh.png`}
             alt="Learnhall"
             className="proj mx-auto lg:h-[200px] lg:w-[400px] h-[150px] w-[250px]"
             width={400}
@@ -53,6 +53,20 @@ function Projects() {
             width={400}
             height={200}
             className="proj mx-auto lg:h-[200px] lg:w-[400px] h-[150px] w-[250px]"
+          />
+        </Link>
+        <Link
+          href="https://spotify-clone-mike.vercel.app/"
+          target="__blank"
+          className="block pn hover:opacity-75"
+        >
+          <div className="text-center hover:opacity-75">Spotify Clone</div>
+          <Image
+            src={`/spotify.png`}
+            alt="Learnhall"
+            className="proj mx-auto lg:h-[200px] lg:w-[400px] h-[150px] w-[250px]"
+            width={400}
+            height={200}
           />
         </Link>
       </div>

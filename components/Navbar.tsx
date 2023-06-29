@@ -28,7 +28,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href={`https://linkedin.com/michaelchristwin`}>
+          <Link href={`https://linkedin.com/in/michaelchristwin`}>
             <AiFillLinkedin
               size={25}
               className="lg:w-[25px] w-[20px] h-[20px] lg:h-[25px]"
