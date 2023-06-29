@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 function Navbar() {
   return (
     <nav className="flex justify-end items-center fixed top-0 text-[#f6f2f2dc] bg-[#09090955] w-full h-[50px] z-10">
-      <ul className="flex lg:gap-5 gap-4 lg:mr-5 mr-4">
+      <ul className="ml-4 flex lg:gap-5 gap-4 lg:mr-5 mr-4">
         <li>
           <Link href={`/`}>Home</Link>
         </li>

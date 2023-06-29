@@ -4,7 +4,9 @@ import Link from "next/link";
 function Projects() {
   return (
     <section className="projects pb-5" id="projects">
-      <h1 className="text-center pro-t">Projects</h1>
+      <h1 className="text-center text-[30px] mt-[50px] font-[500] lg:text-[48px] lg:mt-[100px] lg:font-[600]">
+        Projects
+      </h1>
       <div className="lg:grid-rows-2 grid lg:grid-cols-2 grid-cols-1 grid-rows-1 gap-y-8">
         <Link
           href="https://learnhall-web.vercel.app/"

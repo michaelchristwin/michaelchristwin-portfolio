@@ -14,7 +14,7 @@ function Tool({ img }: ToolProps) {
             alt="Tool"
             width={70}
             height={70}
-            className="rounded-[30%]"
+            className="rounded-[27%]"
           />
         </div>
       </div>
