@@ -28,7 +28,7 @@ function About() {
           specialized in React JS, Next JS and other frontend technlogies. An open-source enthusiast supportive of projects such as Bitcoin, Linux and Free code camp`}
         </p>
         <button className="bg-blue-600 p-2 rounded hover:opacity-75 btn mt-3">
-          <a href={`/resume.pdf`} download className="text-white">
+          <a href={`/cv.pdf`} download className="text-white">
             Download CV
           </a>
         </button>
