@@ -44,7 +44,7 @@ function Projects() {
         </Link>
 
         <Link
-          href="https://netflix-clone-eosin-sigma.vercel.app/"
+          href="https://netflix-clone-mike.vercel.app/"
           target="__blank"
           className="block pn hover:opacity-75"
         >
