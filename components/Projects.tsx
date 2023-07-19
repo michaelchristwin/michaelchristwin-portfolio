@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaEye } from "react-icons/fa";
 
 function Projects() {
   return (
@@ -11,18 +12,21 @@ function Projects() {
         <Link
           href="https://learnhall-web.vercel.app/"
           target="__blank"
-          className="block pn hover:opacity-75"
+          className="block pn hover:opacity-75 relative"
         >
           <div className="text-center hover:opacity-75">
             Learnhall Official Website
           </div>
-          <Image
-            src={`/lh.png`}
-            alt="Learnhall"
-            className="proj mx-auto lg:h-[200px] lg:w-[400px] h-[150px] w-[250px]"
-            width={400}
-            height={200}
-          />
+          <div className="relative mx-auto lg:h-[200px] lg:w-[400px] h-[150px] w-[250px]">
+            <FaEye className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black hover:block" />
+            <Image
+              src={`/lh.png`}
+              alt="Learnhall"
+              className="mx-auto"
+              width={400}
+              height={200}
+            />
+          </div>
         </Link>
 
         <Link
