@@ -6,7 +6,7 @@ const font = Lexend({ subsets: ["latin"], weight: "300" });
 function About() {
   return (
     <section
-      className="pt-5 lg:flex w-[100vw] block bg-white pb-[50px] px-0 lg:px-3"
+      className="pt-5 lg:flex w-[100vw] block bg-[#1a1a1a] !text-white pb-[50px] px-0 lg:px-3"
       id="about"
     >
       <Image

@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .cont {
   width: fit-content !important;
   float: right !important;
@@ -115,7 +114,6 @@ body {
 
 .skills {
   width: 100vw;
-  background-color: white;
 }
 .skill-in {
   margin-top: 100px;
@@ -135,10 +133,12 @@ body {
   margin-top: 30px;
 }
 .projects {
-  color: black;
-  background-color: white;
+  color: white;
   width: 100vw;
   padding-top: 100px;
+}
+.projects div {
+  color: white;
 }
 .proj {
   width: 400px;

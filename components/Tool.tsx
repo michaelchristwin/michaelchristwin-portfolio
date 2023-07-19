@@ -8,7 +8,7 @@ function Tool({ img }: ToolProps) {
   return (
     <li className="hex">
       <div className="hexIn">
-        <div className="hexLink">
+        <div className="hexLink !bg-black">
           <Image
             src={img}
             alt="Tool"

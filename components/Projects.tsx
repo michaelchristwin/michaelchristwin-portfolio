@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Projects() {
   return (
-    <section className="projects pb-5" id="projects">
+    <section className="projects pb-5 bg-[#1a1a1a]" id="projects">
       <h1 className="text-center text-[30px] mt-[50px] font-[500] lg:text-[48px] lg:mt-[100px] lg:font-[600]">
         Projects
       </h1>
@@ -30,7 +30,7 @@ function Projects() {
           target="__blank"
           className="pn block hover:opacity-75"
         >
-          <div className="text-center hover:opacity-75">
+          <div className="text-center hover:opacity-7">
             Switch NFT Marketplace
           </div>
 
