@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Michael Christwin portfolio
 
-## Getting Started
+A responsive static portfolio built with semantic HTML and CSS. No runtime JavaScript, dependencies, external fonts, tracking, or build step. Project visuals are lightweight CSS illustrations, not screenshots.
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+From this directory, run:
+
+```sh
+python3 -m http.server 8080 --directory dist
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:8080`. On a remote server, use your SSH client's port forwarding, such as `ssh -L 8080:localhost:8080 user@server`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Edit
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Content, projects, experience, and links: `dist/index.html`.
+- Colors, layout, and responsive rules: `dist/styles.css`. Shared tokens are defined in `:root`.
+- Browser icon: `dist/favicon.svg`.
 
-## Learn More
+All essential content renders without scripts. Navigation uses native anchors, with a skip link, visible keyboard focus, and reduced-motion support. Layouts adapt to phone, tablet, and desktop widths.
 
-To learn more about Next.js, take a look at the following resources:
+No email, availability claim, undated work dates, or project metrics have been invented. The GitHub profile serves as the connection destination. Add a verified email or contact link to the final section when available.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy anywhere
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Publish the contents of `dist/` to any static host, including GitHub Pages, Cloudflare Pages, Netlify, or an NGINX server. Leave the build command empty and set the output directory to `dist`. No environment variables are needed.
 
-## Deploy on Vercel
+For NGINX, place `dist` at your chosen web root and configure a server block like this (replace the path and hostname):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```nginx
+server {
+    listen 80;
+    server_name portfolio.example.com;
+    root /var/www/michael-portfolio/dist;
+    index index.html;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+Configure HTTPS through your hosting provider or existing server certificate tooling. For future asset changes, deploy the HTML and CSS together and use revalidation rather than long immutable caching on these unversioned filenames.
