@@ -1,14 +1,17 @@
 {
   "name": "michael-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My portfolio site",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "landing page"
+  ],
+  "author": "Michael Christwin",
   "license": "ISC",
   "devEngines": {
     "packageManager": {
