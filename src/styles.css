@@ -1,11 +1,12 @@
 /* Foundation: edit these tokens to change the site palette. */
 :root {
   --paper: #f6f5ef;
-  --ink: #173c32;
-  --muted: #64716a;
-  --line: #d9dfd4;
-  --green: #173e33;
-  --lime: #d8ebaa;
+  --ink: #0ba0e3;
+  --muted: #555e61;
+  --line: #d3e4eb;
+  --blue: #0ba0e3;
+  --lime: #b9e6fa;
+  --star: #448db7;
   --mono: "Courier New", monospace;
   --radius: 8px;
   color-scheme: light;
@@ -30,10 +31,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #55804b;
+  color: rgb(11, 160, 227, 0.7);
 }
 a:focus-visible {
-  outline: 3px solid #729843;
+  outline: 3px solid var(--star);
   outline-offset: 5px;
 }
 p,
@@ -51,7 +52,7 @@ h3 {
   left: 15px;
   top: -70px;
   padding: 12px;
-  background: var(--green);
+  background: var(--blue);
   color: white;
   z-index: 5;
 }
@@ -74,7 +75,7 @@ h3 {
 }
 .brand span {
   font-size: 26px;
-  color: #678744;
+  color: var(--star);
   margin-left: 6px;
 }
 .nav-links {
@@ -84,7 +85,7 @@ h3 {
 }
 .nav-github {
   font-size: 13px;
-  border-bottom: 1px solid #9faa9b;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 4px;
 }
 .nav-github span {
@@ -104,7 +105,7 @@ h3 {
 }
 .dot {
   display: inline-block;
-  background: #6d914d;
+  background: var(--lime);
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -144,12 +145,23 @@ h3 {
   font-size: 13px;
 }
 .primary {
-  background: var(--green);
+  background: var(--blue);
   color: white;
+  transform: translateY(0);
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+  box-shadow: 0 4px 0 var(--muted);
 }
 .primary:hover {
-  background: #285b44;
+  background: rgb(11, 160, 227, 0.8);
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--muted);
+}
+.primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--muted);
 }
 .text-link {
   font-size: 12px;
@@ -230,9 +242,9 @@ h3 {
 .node-api {
   top: 142px;
   right: 25px;
-  background: var(--green);
+  background: var(--blue);
   color: #eef2df;
-  border-color: var(--green);
+  border-color: var(--blue);
 }
 .node-api span {
   color: #b5c49f;
@@ -464,7 +476,7 @@ h2 {
   letter-spacing: 1px;
 }
 .api-line .api-center {
-  background: var(--green);
+  background: var(--blue);
   color: var(--lime);
   padding: 25px;
   border-radius: 50%;
@@ -528,7 +540,7 @@ h2 {
 }
 /* About, experience, and contact */
 .about-section {
-  background: #eaeedf;
+  background: #dde8ed;
   border-block: 1px solid #dce2d1;
   padding-block: 78px;
 }
@@ -542,7 +554,7 @@ h2 {
   font-size: 42px;
 }
 .about-copy {
-  color: #5c6b5c;
+  color: var(--muted);
   font-size: 15px;
   line-height: 1.9;
   max-width: 450px;
@@ -560,7 +572,7 @@ h2 {
 .skill-row > span {
   font: 8px var(--mono);
   letter-spacing: 1px;
-  color: #63725d;
+  color: var(--muted);
 }
 .skill-row h3 {
   font-size: 21px;
@@ -570,7 +582,7 @@ h2 {
 }
 .skill-row p {
   font-size: 12px;
-  color: #65705e;
+  color: var(--muted);
   margin: 0;
 }
 .section-note {
@@ -601,8 +613,9 @@ h2 {
   margin-bottom: 3px;
 }
 .experience-row .company {
-  color: #4c7446;
+  color: var(--muted);
   font-size: 12px;
+  font-weight: 600;
   margin: 0 0 10px;
 }
 .experience-row p {
@@ -620,7 +633,7 @@ h2 {
   border-radius: 3px;
 }
 .contact-section {
-  background: var(--green);
+  background: var(--blue);
   color: #f0f3e4;
   padding: 68px 0;
 }
@@ -630,30 +643,30 @@ h2 {
   justify-content: space-between;
 }
 .contact-section .eyebrow {
-  color: #bdcba8;
+  color: var(--paper);
 }
 .contact-section h2 {
   font-size: 48px;
   letter-spacing: -2px;
 }
 .contact-section p:not(.eyebrow) {
-  color: #b9c9b8;
+  color: var(--paper);
   font-size: 14px;
   margin-top: 22px;
 }
 .light-button {
   background: var(--lime);
-  color: var(--green);
+  color: var(--blue);
   margin-top: 13px;
 }
 .light-button:hover {
   background: #ecf6d1;
-  color: var(--green);
+  color: var(--blue);
 }
 .contact-star {
   font-size: 180px;
   line-height: 1;
-  color: #d8ebaa;
+  color: var(--lime);
   margin-right: 60px;
 }
 .footer {
