@@ -6,7 +6,7 @@
   --primary-text: #e6edf3;
   --secondary-text: #8b949e;
   --accent: #10b981;
-  --mono: "Courier New", monospace;
+  --mono: "JetBrains Mono", monospace;
   --radius: 8px;
 
   color-scheme: dark;
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(11, 160, 227, 0.7);
+  color: var(--accent);
 }
 a:focus-visible {
   outline: 3px solid var(--star);
@@ -314,7 +314,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  background: #fbfaf6;
+  background: var(--surface);
 }
 .project-art {
   height: 250px;
@@ -534,7 +534,7 @@ h2 {
 .tags span {
   font: 9px var(--mono);
   padding: 5px 8px;
-  background: #eef0e7;
+  background: var(--base);
   border-radius: 3px;
 }
 .compact-project {
@@ -542,8 +542,8 @@ h2 {
 }
 /* About, experience, and contact */
 .about-section {
-  background: #dde8ed;
-  border-block: 1px solid #dce2d1;
+  background: var(--base);
+  border-block: 1px solid var(--surfave-border);
   padding-block: 78px;
 }
 .about-grid {
