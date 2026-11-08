@@ -1,19 +1,22 @@
 /* Foundation: edit these tokens to change the site palette. */
 :root {
-  --paper: #f6f5ef;
-  --ink: #0ba0e3;
-  --muted: #555e61;
-  --line: #d3e4eb;
-  --blue: #0ba0e3;
-  --lime: #b9e6fa;
-  --star: #448db7;
+  --base: #0d1117;
+  --surface: #1e1e1e;
+  --surfave-border: #30363d;
+  --primary-text: #e6edf3;
+  --secondary-text: #8b949e;
+  --accent: #10b981;
   --mono: "Courier New", monospace;
   --radius: 8px;
-  color-scheme: light;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
+
+  color-scheme: dark;
+  color: var(--primary-text);
+  background: var(--base);
   font-synthesis: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
@@ -145,19 +148,18 @@ h3 {
   font-size: 13px;
 }
 .primary {
-  background: var(--blue);
+  background: var(--accent);
   color: white;
   transform: translateY(0);
   transition:
     transform 150ms ease,
     box-shadow 150ms ease;
-  box-shadow: 0 4px 0 var(--muted);
+  box-shadow: 0 4px 0 var(--surfave-border);
 }
 .primary:hover {
-  background: rgb(11, 160, 227, 0.8);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 var(--muted);
+  box-shadow: 0 6px 0 var(--surfave-border);
 }
 .primary:active {
   transform: translateY(2px);
