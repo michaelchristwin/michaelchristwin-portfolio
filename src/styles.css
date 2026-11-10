@@ -72,8 +72,8 @@ h3 {
   justify-content: space-between;
 }
 .brand {
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 500;
   letter-spacing: -3px;
 }
 .brand span {
@@ -409,9 +409,12 @@ h2 {
   font-size: 6px;
 }
 .indexer-art {
-  background: #1c352d;
-  color: #cbdabc;
-  padding: 25px;
+  /* background: #1c352d; */
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
 }
 .terminal {
   width: 100%;

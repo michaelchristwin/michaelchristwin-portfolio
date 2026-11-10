@@ -1,0 +1,14 @@
+{
+  "fontFamily": "Inter, sans-serif",
+  "htmlLabels": false,
+  "flowchart": {
+    "nodeSpacing": 35,
+    "rankSpacing": 35,
+    "padding": 10,
+    "curve": "basis"
+  },
+  "themeVariables": {
+    "fontFamily": "Inter, sans-serif",
+    "primaryTextColor": "#10b981"
+  }
+}
