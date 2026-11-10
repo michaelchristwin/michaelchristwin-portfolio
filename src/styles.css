@@ -1,19 +1,22 @@
 /* Foundation: edit these tokens to change the site palette. */
 :root {
-  --paper: #f6f5ef;
-  --ink: #0ba0e3;
-  --muted: #555e61;
-  --line: #d3e4eb;
-  --blue: #0ba0e3;
-  --lime: #b9e6fa;
-  --star: #448db7;
-  --mono: "Courier New", monospace;
+  --base: #0d1117;
+  --surface: #1e1e1e;
+  --surfave-border: #30363d;
+  --primary-text: #e6edf3;
+  --secondary-text: #8b949e;
+  --accent: #10b981;
+  --mono: "JetBrains Mono", monospace;
   --radius: 8px;
-  color-scheme: light;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
+
+  color-scheme: dark;
+  color: var(--primary-text);
+  background: var(--base);
   font-synthesis: none;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +34,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(11, 160, 227, 0.7);
+  color: var(--accent);
 }
 a:focus-visible {
   outline: 3px solid var(--star);
@@ -69,8 +72,8 @@ h3 {
   justify-content: space-between;
 }
 .brand {
-  font-size: 35px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 500;
   letter-spacing: -3px;
 }
 .brand span {
@@ -145,19 +148,18 @@ h3 {
   font-size: 13px;
 }
 .primary {
-  background: var(--blue);
+  background: var(--accent);
   color: white;
   transform: translateY(0);
   transition:
     transform 150ms ease,
     box-shadow 150ms ease;
-  box-shadow: 0 4px 0 var(--muted);
+  box-shadow: 0 4px 0 var(--surfave-border);
 }
 .primary:hover {
-  background: rgb(11, 160, 227, 0.8);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 var(--muted);
+  box-shadow: 0 6px 0 var(--surfave-border);
 }
 .primary:active {
   transform: translateY(2px);
@@ -312,7 +314,7 @@ h2 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
-  background: #fbfaf6;
+  background: var(--surface);
 }
 .project-art {
   height: 250px;
@@ -407,9 +409,12 @@ h2 {
   font-size: 6px;
 }
 .indexer-art {
-  background: #1c352d;
-  color: #cbdabc;
-  padding: 25px;
+  /* background: #1c352d; */
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
 }
 .terminal {
   width: 100%;
@@ -532,7 +537,7 @@ h2 {
 .tags span {
   font: 9px var(--mono);
   padding: 5px 8px;
-  background: #eef0e7;
+  background: var(--base);
   border-radius: 3px;
 }
 .compact-project {
@@ -540,8 +545,8 @@ h2 {
 }
 /* About, experience, and contact */
 .about-section {
-  background: #dde8ed;
-  border-block: 1px solid #dce2d1;
+  background: var(--base);
+  border-block: 1px solid var(--surfave-border);
   padding-block: 78px;
 }
 .about-grid {

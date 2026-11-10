@@ -1,28 +1,29 @@
 {
   "name": "michael-portfolio",
+  "type": "module",
   "version": "1.0.0",
   "description": "My portfolio site",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "author": "Michael Christwin",
+  "license": "ISC",
+  "packageManager": "pnpm@12.18.0",
   "keywords": [
     "portfolio",
     "landing page"
   ],
-  "author": "Michael Christwin",
-  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "diagrams": "node scripts/build-diagrams.mjs"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^12.2.0",
+    "vite": "^8.3.5"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.15.0",
-      "onFail": "download"
+      "version": "12.18.0"
     }
-  },
-  "packageManager": "pnpm@12.15.0",
-  "type": "module",
-  "devDependencies": {
-    "vite": "^8.3.5"
   }
 }

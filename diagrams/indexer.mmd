@@ -1,0 +1,8 @@
+flowchart LR
+    Contract[Rollup contract] -- NewState --> Indexer[Indexer]
+    Indexer -- decode + store --> DB[(PostgreSQL)]
+    DB --> GQL[GraphQL]
+    DB --> REST[REST]
+    GQL --> Client([Clients])
+    REST --> Client
+    DB -. last block .-> Indexer
